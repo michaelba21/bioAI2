@@ -1,8 +1,4 @@
 [build]
   command = "npm install --legacy-peer-deps && npm run build"
   publish = "build"
-  environment = { NODE_VERSION = "22.17.0" }
-
-[build.environment]
-  NPM_FLAGS = "--legacy-peer-deps"
-  SKIP_PREFLIGHT_CHECK = "true"
+  environment = { NODE_VERSION = "22.17.0", NPM_FLAGS = "--legacy-peer-deps", SKIP_PREFLIGHT_CHECK = "true" }
