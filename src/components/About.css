@@ -1,0 +1,203 @@
+/* About.css */
+
+#about {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 4rem 2rem;
+    background-color: #f9fbfd;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    color: #2a4365;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  h2 {
+    color: #3182ce;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid #ebf8ff;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #2c5282;
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.8rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .hero-section {
+    background-color: #ebf8ff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .hero-section h2 {
+    color: #2b6cb0;
+    font-size: 2rem;
+    border-bottom: none;
+  }
+  
+  .company-info {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+  }
+  
+  .expertise-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .point {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .checkmark {
+    color: #38a169;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  
+  .mission, .solutions, .case-study, 
+  .technology-stack, .partnership, 
+  .ethics, .why-us {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .bullet-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem auto;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .bullet-list li {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    position: relative;
+    padding-left: 0;
+  }
+  
+  .nested-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem auto;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .nested-list li {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .tech-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .tech-list li {
+    background-color: #ebf8ff;
+    padding: 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  
+  .solution-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .solution-item:last-child {
+    border-bottom: none;
+  }
+  
+  .reasons-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .reasons-list li {
+    background-color: #f0fff4;
+    padding: 1rem;
+    margin: 0.8rem auto;
+    border-left: 4px solid #38a169;
+    border-radius: 0 4px 4px 0;
+    max-width: 80%;
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    .hero-section, .company-info, .mission, 
+    .solutions, .case-study, .technology-stack, 
+    .partnership, .ethics, .why-us {
+      padding: 1.5rem;
+    }
+    
+    .tech-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .tech-list li, .reasons-list li {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #about {
+      padding: 2rem 1rem;
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .point {
+      align-items: flex-start;
+    }
+  }

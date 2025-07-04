@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+.contact-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-info {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-details {
+  margin-top: 1rem;
+}
+
+.contact-details p {
+  margin: 1rem 0;
+}
+
+.contact-details strong {
+  color: #007bff;
+}
