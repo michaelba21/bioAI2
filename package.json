@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.1.4",
-    "@testing-library/react": "^15.0.0",
+    "@testing-library/react": "github:testing-library/react-testing-library#react-19",
     "@testing-library/user-event": "^14.5.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -17,9 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm install --legacy-peer-deps && react-scripts build",
     "test": "react-scripts test --watchAll=false",
-    "test:watch": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "react-scripts start",
     "predeploy": "npm run build",
@@ -44,11 +43,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0"
-  },
-  "resolutions": {
-    "@testing-library/react": "^15.0.0"
+    "gh-pages": "^6.1.1"
   }
 }
